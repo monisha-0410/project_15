@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title>fieldset Tag</title>  
+<link rel="stylesheet" href="{% static 'css/cs12.css' %}"  
+</head>  
+<body>  
+ <h1>Example of fieldset Tag</h1>  
+ <p>User Feedback Form</p>  
+ <div> 
+    <img src="{% static 'image/feedback.jpg' %}" alt="no image" width="200px",height="300px"> 
+ <form class="wd">  
+     <fieldset class="wd">  
+        <legend>User basic information:</legend>  
+        <label>First Name</label><br>  
+        <input type="text" name="fname"><br>  
+        <label>Last Name</label><br>  
+        <input type="text" name="lname"><br>  
+        <label>Enter Email</label><br>  
+        <input type="email" name="email"><br><br>  
+     </fieldset><br>  
+    <label class="tx">Enter your feedback:</label><br>  
+    <textarea class="tx" cols="30"></textarea><br><br>  
+     <input  class="tx" type="Submit"><br>  
+  </form>  
+ </div>  
+</body>  
+</html>  
